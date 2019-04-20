@@ -1,0 +1,30 @@
+@import 'variables.less';
+@import 'mixins.less';
+.site-footer{
+  background-color: @footer-main;
+  height: 75px;
+  @media @small{
+    height: 120px;
+  }
+}
+.footer-icon{
+  .basic-text(26px,26px);
+  @media @small{
+    .basic-text(40px,30px);
+  }
+  padding-bottom: 20px;
+  margin-left: 20px;
+  color: @text-lightest;
+}
+.footer-row{
+  padding-top: 15px;
+}
+.footer-widgets{
+  background-color: @footer-main;
+  bottom:0;
+
+}
+
+.footer-text{
+  color: @text-lightest!important;
+}

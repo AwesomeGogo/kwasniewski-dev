@@ -1,0 +1,95 @@
+// Wyrownanie i pozycjonowanie
+.center-text {
+  text-align: center;
+}
+
+.v-align {
+  vertical-align: middle;
+}
+.inline-block{
+  display: inline-block;
+}
+
+.inline{
+  display: inline;
+}
+.block {
+  display: block;
+}
+.relative{
+  position: relative;
+}
+.absolute{
+  position: absolute;
+}
+
+.absolute-0000{
+  .absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.v-align-transform{
+  .relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.h-align-transform{
+  .relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+// Listy
+.list-style-none{
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+// przejscie
+.basic-transition{
+  transition: all 0.3s ease-in-out;
+}
+// kolory
+.color(@bg-color;@color){
+  background-color: @bg-color;
+  color: @color;
+}
+// Tekst
+.basic-text(@size;@l-height){
+  font-size: @size;
+  line-height: @l-height;
+}
+
+
+.upper{
+  text-transform: uppercase;
+}
+
+.padding-margin(@padding;@margin){
+  margin: @margin;
+  padding: @padding;
+}
+
+
+.size(@w;@h)
+{
+  width: @w;
+  height: @h;
+}
+.opacity0{
+  opacity: 0;
+}
+.opacity1{
+  opacity: 1;
+}
+
+
+.pointer{
+  cursor: pointer;
+}
+
+
+.shadow-hover{
+  box-shadow: 0 6px 7px rgba(0,0,0,0.1), 0 4px 8px rgba(0,0,0,0.3);
+}

@@ -1,0 +1,32 @@
+<div class="container contact-padding" id="contact">
+    <div class="row center-text">
+        <div class="col-sm-12 col-lg-12">
+            <h1 class="about-text">Formularz kontaktowy</h1>
+            <p class="text-muted about-text">Masz jakieś pytanie? Napisz śmiało a chętnie Ci na nie odpowiem!</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    <form name="cf" ng-controller="cfController as cfCtrl" ng-submit="submitForm(cf.$valid)">
+                        <div class="input-container">
+                            <i class="fa fa-user icon"></i>
+                            <input class="input-field" type="text" name="name" id="name" ng-model="name" pattern="^[A-Za-z0-9_]{1,15}$" placeholder="Imie" required>
+                        </div>
+                        <div class="input-container">
+                            <i class="fa fa-envelope icon"></i>
+                            <input class="input-field" type="email" id="email" ng-model="email" aria-describedby="emailHelp" name="email" placeholder="xyz@example.com" required>
+                        </div>
+                        <div class="input-container">
+                            <i class="fas fa-comment icon"></i>
+                            <textarea placeholder="Wiadomosc" class="input-field" name="private" ng-model="message" id="private" rows="5" required></textarea>
+                        </div>
+                        <div id="form-messages"></div>
+                        <button type="submit" class="contact-btn" ng-disabled="cf.$invalid">Wyslij <span class="fa fa-arrow-right"></span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
