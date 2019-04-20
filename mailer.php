@@ -2,7 +2,7 @@
 $post_data = file_get_contents("php://input");
 $data = json_decode($post_data);
 
-$to = "dominik@kwasniewski-dev.pl";
+$to = "dkwasniewski145@gmail.com";
 $subject = 'Email z formularza kwasniewski-dev';
 
 $message = $data->message;
