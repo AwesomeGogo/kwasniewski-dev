@@ -1,5 +1,4 @@
 RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-#RewriteRule ^(.front-end*)$ /front-end [NC,L,QSA]
-RewriteRule ^(.*)$ /angularjs/ [NC,L,QSA]
+RewriteRule ^(.*)$ /kwasniewski-dev/ [NC,L,QSA]
